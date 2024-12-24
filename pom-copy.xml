@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>top.heyqing</groupId>
+    <artifactId>hey-music</artifactId>
+    <version>v1.0.0</version>
+    <name>hey-music</name>
+    <description>音频格式转换平台</description>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.xuggle/xuggle-xuggler -->
+        <!--        <dependency>-->
+        <!--            <groupId>com.xuggle</groupId>-->
+        <!--            <artifactId>xuggle-xuggler</artifactId>-->
+        <!--            <version>5.4</version>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version> <!-- 版本号可替换为最新版本 -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+
+        <!-- 此版本中主要兼容linux和windows系统，如需兼容其他系统平台，请引入对应依赖即可 -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.bytedeco</groupId>-->
+        <!--            <artifactId>opencv</artifactId>-->
+        <!--            <version>4.6.0-1.5.8</version>-->
+        <!--            <classifier>linux-x86_64</classifier>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv</artifactId>
+            <version>4.6.0-1.5.8</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.bytedeco</groupId>-->
+        <!--            <artifactId>openblas</artifactId>-->
+        <!--            <version>0.3.21-1.5.8</version>-->
+        <!--            <classifier>linux-x86_64</classifier>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>openblas</artifactId>
+            <version>0.3.21-1.5.8</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>5.1.2-1.5.8</version>
+            <classifier>linux-x86_64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>5.1.2-1.5.8</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+
+
+        <!-- SLF4J API dependency -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <!-- SLF4J Simple binding dependency (optional, to log to console) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+    </dependencies>
+
+</project>
