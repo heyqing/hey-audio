@@ -11,6 +11,12 @@ package top.heyqing.heyaudio.constants;
  */
 public interface AudioFormat {
 
+    /**
+     * 音频比特率
+     */
+    int AUDIO_BITRATE = 128 * 1000;
+
+
     /************************************************无损音频格式*******************************************************/
 
     /**
@@ -25,14 +31,6 @@ public interface AudioFormat {
      * Apple Lossless Audio Codec:苹果开发的无损音频格式
      */
     String ALAC = "alac";
-    /**
-     * Audio Interchange File Format:音频交换文件格式，类似于WAV，常用于音频编辑和多轨录音
-     */
-    String AIFF = "aiff";
-    /**
-     * Sun Microsystems开发的一种简单音频文件格式
-     */
-    String AU = "au";
     /**
      * Monkey's Audio一种无损音频压缩格式
      */
@@ -95,5 +93,9 @@ public interface AudioFormat {
      * 酷我
      */
     String KWM = "kwm";
+    /**
+     * 网易云
+     */
+    String NCM = "ncm";
 
 }

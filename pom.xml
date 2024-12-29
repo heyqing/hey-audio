@@ -85,7 +85,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
-            <version>2.9.0</version> <!-- 你可以使用最新版本 -->
+            <version>2.9.0</version>
         </dependency>
 
         <!-- JavaCV 依赖，提供 FFmpeg 和 OpenCV 的 Java 封装 -->
@@ -135,9 +135,19 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <version>7.4.0</version>
+            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.2.0.Final</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-quartz</artifactId>-->
+        <!--        </dependency>-->
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -167,7 +177,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>top.heyqing.heyblog.HeyBlogApplication</mainClass>
+                    <mainClass>top.heyqing.heyaudio.MusicApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -2,6 +2,10 @@ server:
   port: 8085
 
 spring:
+  servlet:
+    multipart:
+      max-file-size: 125MB
+      max-request-size: 125MB
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -35,3 +39,9 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
+
+file:
+  audio:
+    path:
+      input: file/audio/input
+      output: file/audio/output
